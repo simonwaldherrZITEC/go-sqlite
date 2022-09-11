@@ -886,7 +886,7 @@ func TestConcurrentProcesses(t *testing.T) {
 
 	// The current riscv64 board seems too slow for the hardcoded timeouts.
 	// Same goes for freebsd/arm in qemu.
-	switch fmt.Sprintf("%s/%s", runtime.GOOS, runtime/GOARCH) {
+	switch fmt.Sprintf("%s/%s", runtime.GOOS, runtime.GOARCH) {
 	case "linux/riscv64", "freebsd/arm":
 		t.Skip("skipping test")
 	}
